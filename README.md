@@ -29,6 +29,8 @@ Perguntas e respostas:
 
 [Como clonar um repositório em uma pasta de nome diferente do nome da pasta do repositório?](#2021-01-26-112652)
 
+[Recebi e-mail do github dizendo que autenticação por senha não será mais válida a partir de 13.08.2021. O que fazer?]()
+
 ## Motivação
 
 Se você for o único desenvolvedor do projeto, quer acessar o fonte de qualquer lugar e quando edita o fonte em computadores diferentes tem dificuldade ou aborrecimentos em unificar as versões dos computadores, git, github e esta página podem ajudar.
@@ -349,6 +351,16 @@ Usei isto quando quis fazer uma nova cópia de um exemplo do Heroku. Tinha feito
 
 Referência: <https://stackoverflow.com/questions/8570636/change-name-of-folder-when-cloning-from-github>
 
+## 2021-01-26-122757
+## 2021-01-26-134847
+
+Recebi e-mail do github dizendo que [autenticação por senha não será mais válida a partir de 13.08.2021](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/). 
+
+O que fazer?
+
+O github recomenda [autenticar por token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token#using-a-token-on-the-command-line). Para mim, o problema é que não vou decorar um token, então teria que fazer copy-paste, o que é uma operação a mais, e uma que eu não desejo fazer.
+
+Mais perto da data vejo o que fazer.
 
 ## Comentários
 
