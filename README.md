@@ -25,7 +25,9 @@ Gosto da última.
 
 Case: [Como controle de versão poupou-me tempo e desgaste emocional](README.md#2020-12-03-114552). 
 
+Perguntas e respostas:
 
+[Como clonar um repositório em uma pasta de nome diferente do nome da pasta do repositório?](#2021-01-26-112652)
 
 ## Motivação
 
@@ -330,6 +332,23 @@ Switched to branch &apos;master&apos;
 Your branch is up to date with &apos;origin/master&apos;.
 <font color="#859900"><b>fabio@fabio-13Z940-G-BK71P1</b></font>:<font color="#268BD2"><b>~/Documentos/git/CFA</b></font>$ 
 </pre>
+
+## 2021-01-26-112652
+
+Como clonar um repositório em uma pasta de nome diferente do nome da pasta do repositório?
+
+Contexto:
+
+Quando faço: `git clone https://github.com/FNakano/MeuUsoDeGit.git`, o git cria a pasta local `MeuUsoDeGit` e copia o conteúdo do repositório para a pasta. Como clonar para uma pasta de nome diferente, por exemplo: `ComoFNakanoUsaGit`?
+
+Resposta: use  `git clone https://github.com/FNakano/MeuUsoDeGit.git ComoFNakanoUsaGit`.
+
+Mais contexto:
+
+Usei isto quando quis fazer uma nova cópia de um exemplo do Heroku. Tinha feito a primeira para testar o exemplo e queria conservar como estava. Simultaneamente, queria outra cópia para modificar e testar.
+
+Referência: <https://stackoverflow.com/questions/8570636/change-name-of-folder-when-cloning-from-github>
+
 
 ## Comentários
 
