@@ -362,6 +362,71 @@ O github recomenda [autenticar por token](https://docs.github.com/en/github/auth
 
 Mais perto da data vejo o que fazer.
 
+## 2021-03-10-115211
+
+### Usando `pull requests`.
+
+Em um desenvolvimento colaborativo, há modificações que gostaríamos que alguém revisasse antes de incluir no ramo principal. A solução para isto é criar um ramo diferente do principal (com `git checkout -b <novo_ramo>`), fazer as modificações, adicionar (com `git add .`), *comitar* (com git commit ...), criar o ramo no repositório remoto (com `git push --set-upstream origin <novo_ramo>`, ou, se já estiver criado, atualizar com `git push <novo_ramo>`), entrar no github e fazer `pull request`, ou PR. Maiores detalhes em: https://opensource.com/article/19/7/create-pull-request-github.
+
+Quando faz `push <novo_ramo>` sem ter criado o ramo, ocorre um erro - veja a [captura da tela](screenshots/Captura%20de%20tela%20de%202021-03-10%2011-14-00.png). 
+
+A outra pessoa (o revisor), se concordar com as modificações, vai fundir (merge) os ramos, senão segue uma negociação que pode ser feita através do github.
+
+PR é uma funcionalidade do github.
+
+Ainda não vi o que acontece depois que o revisor faz merge (será que o novo ramo é fechado? o que acontece na minha cópia local? Eu posso/consigo atualizar o novo ramo? Devo abandoná-lo, fazer checkout do ramo principal e fazer `pull`?,...). Talvez esta referência ajude: https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging.
+
+
+### Incluir fórmulas LaTeX no markdown  
+
+Se estiver funcionando, primeiro vem a fórmula renderizada e depois o código-fonte. Nos blocos, indicar `math` como linguagem, sem espaço entre os três backquotes e o `math`.
+
+Depois deste texto, na mesma linha, deve aparecer uma fórmula: $`(\forall x)(Green(x))`$
+
+```
+$`(\forall x)(Green(x))`$
+```
+
+```math
+
+\begin{bmatrix} 
+  a & b \\
+  12 & \gamma 
+\end{bmatrix}
+```
+
+```
+
+\begin{bmatrix} 
+  a & b \\
+  12 & \gamma 
+\end{bmatrix}
+```
+
+```math
+
+\sum_{i=0}^{15} \Theta_{mm}(x)*\frac{a}{\lambda+\frac{b}{c}}e^{2*\omega}
+
+```
+
+```
+
+\sum_{i=0}^{15} \Theta_{mm}(x)*\frac{a}{\lambda+\frac{b}{c}}e^{2*\omega}
+
+```
+
+
+A [referência crucial](https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog) veio no stackoverflow.
+
+Entretanto, parece que não há consenso. [Veja este link](https://github.com/github/markup/issues/1294).
+
+As referências para formatos e símbolos é:
+
+- https://katex.org/docs/supported.html
+
+
+
+
 ## Comentários
 
 (comentário: este editor de markdown (editor online do github) é bem legal - pelo menos o bold e o itálico ele formata WYSIWYG).
