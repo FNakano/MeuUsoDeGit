@@ -415,6 +415,7 @@ $`(\forall x)(Green(x))`$
 
 ```
 
+**... e não é que no github, em 2021-03-10, não funciona!**... instalei um plugin no navegador Firefox que, quando abro um markdown, faz a renderização, inclusive das fórmulas: ´GitLab Markdown Viewer:Renders markdown files in GitLab style.´ Instalei um outro que renderiza diagramas a partir do código-fonte deles: `Markdown Diagrams:Render PlantUML, Mermaid and others graph/diagrams on webpages.`. São úteis para renderizar e imprimir documentos...
 
 A [referência crucial](https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog) veio no stackoverflow.
 
